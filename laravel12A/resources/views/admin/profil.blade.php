@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman @yield('title')</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    @include('component.navbar')
+
+    
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+            <h1 class="display-4 mb-4">Hello World</h1>
+            <p class="lead text-muted">Selamat datang di aplikasi Laravel</p>
+            <button class="btn btn-primary" ><a href="/" class="nav-link">Klik Saya</button>
+        </div>
+    </div>
+
+    @yield('content')
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
